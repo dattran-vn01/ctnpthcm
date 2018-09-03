@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      lang="en"
+      layout:decorate="~{layout/main}">
+<body>
+
+<div layout:fragment="content" id="page-wrapper">
+    <form role="form">
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        THÔNG TIN CÁ NHÂN
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>Họ và tên</label>
+                                    <input class="form-control">
+                                    <p class="help-block">Ví dụ: Nguyễn Văn A</p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Pháp danh</label>
+                                    <input class="form-control">
+                                    <p class="help-block">Ví dụ: Nguyễn Văn A</p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Năm sinh</label>
+                                    <input class="form-control">
+                                    <p class="help-block">Ví dụ: Nguyễn Văn A</p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label>Giới tính</label>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1"
+                                                       value="MALE" checked>Nam
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2"
+                                                       value="FEMALE">Nữ
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Hình thẻ cá nhân</label>
+                                    <input type="file">
+                                    <p class="help-block">Hình thẻ rõ mặt đề làm thẻ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <div class="col-lg-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        THÔNG TIN ĐĂNG KÝ CÔNG QUẢ
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>Số lần công quả trước đây</label>
+                                    <input class="form-control">
+                                    <p class="help-block">Ví dụ: Nguyễn Văn A</p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Có kinh nghiệm ở tổ nào</label>
+                                    <input class="form-control">
+                                    <p class="help-block">Ví dụ: Nguyễn Văn A</p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nguyện vọng vào tổ nào</label>
+                                    <input class="form-control">
+                                    <p class="help-block">Ví dụ: Nguyễn Văn A</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <button type="submit" class="btn btn-primary">LƯU THÔNG TIN</button>
+                <button type="reset" class="btn btn-default">XÓA ĐỂ NHẬP LẠI</button>
+            </div>
+        </div>
+        <!-- /.row -->
+    </form>
+</div>
+</body>
+</html>

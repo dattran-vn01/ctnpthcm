@@ -8,9 +8,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HomeController {
 
-  @GetMapping("/manage")
-  public String manage(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
+  @GetMapping("/info")
+  public String info(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
     model.addAttribute("name", name);
     return "admin/index";
+  }
+
+  @GetMapping("/profile")
+  public String profile(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
+    model.addAttribute("name", name);
+    return "admin/profile";
   }
 }
